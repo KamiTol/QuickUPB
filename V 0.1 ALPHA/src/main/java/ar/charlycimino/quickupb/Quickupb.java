@@ -3,13 +3,13 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JOptionPane;
 public class Quickupb {
-    //brenda
     static List<Restaurante> lista = new ArrayList<Restaurante>();
     static List<Calificacion> lista8 = new ArrayList<Calificacion>();
     static List<Cliente> lista9 = new ArrayList<Cliente>();
     static List<Ticket> lista10 = new ArrayList<Ticket>();
     public static void main(String[] args){
         int restaurante = 0;//numero de restaurante
+        int posicionDeseada;
         int r=0;//contador while secundarios       
         int nc=0;//numero de cliente
         //lista de restaurantes
@@ -53,16 +53,19 @@ public class Quickupb {
                                             case 0:
                                                 lista.get(0).setNoperario();
                                                 Quickupb.generarPedido(restaurante,p);
+                                                JOptionPane.showMessageDialog(null,lista.get(0).getOperario());
                                                 JOptionPane.showMessageDialog(null, "No olvide recoger su pedido en el primer piso del edificio A");
                                                 break;
                                             case 1:
                                                 lista.get(1).setNoperario();
                                                 Quickupb.generarPedido(restaurante,p);
+                                                JOptionPane.showMessageDialog(null,lista.get(1).getOperario());
                                                 JOptionPane.showMessageDialog(null, "No olvide recoger su pedido en el edificio L - sótano 1");
                                                 break;
                                             case 2:
                                                 lista.get(2).setNoperario();
                                                 Quickupb.generarPedido(restaurante,p);
+                                                JOptionPane.showMessageDialog(null,lista.get(2).getOperario());
                                                 JOptionPane.showMessageDialog(null, "No olvide recoger su pedido en el primer piso del edificio A");
                                                 break;
                                         } 
